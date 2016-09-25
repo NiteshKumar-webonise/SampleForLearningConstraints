@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AutolayoutSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKq-Fs-KEI" userLabel="TopRight">
+                                <rect key="frame" x="168" y="20" width="136" height="260"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgw-OX-ohR" userLabel="Bottom">
+                                <rect key="frame" x="16" y="288" width="288" height="260"/>
+                                <color key="backgroundColor" red="0.97114776749999998" green="1" blue="0.75918372099999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKz-s9-LHE" userLabel="TopLeft">
+                                <rect key="frame" x="16" y="20" width="136" height="260"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pgw-OX-ohR" secondAttribute="trailing" constant="16" id="1xY-MI-w5L"/>
+                            <constraint firstItem="cKq-Fs-KEI" firstAttribute="leading" secondItem="XKz-s9-LHE" secondAttribute="trailing" constant="16" id="4LU-i8-NxQ"/>
+                            <constraint firstItem="cKq-Fs-KEI" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="EKU-17-LjS"/>
+                            <constraint firstAttribute="bottom" secondItem="pgw-OX-ohR" secondAttribute="bottom" constant="20" id="Gd3-Xf-Ly7"/>
+                            <constraint firstAttribute="trailing" secondItem="cKq-Fs-KEI" secondAttribute="trailing" constant="16" id="Kbd-CA-ebo"/>
+                            <constraint firstItem="XKz-s9-LHE" firstAttribute="width" secondItem="cKq-Fs-KEI" secondAttribute="width" id="O6B-Cw-D2x"/>
+                            <constraint firstItem="pgw-OX-ohR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="Oir-p6-MtJ"/>
+                            <constraint firstItem="pgw-OX-ohR" firstAttribute="top" secondItem="cKq-Fs-KEI" secondAttribute="bottom" constant="8" id="SMC-32-q48"/>
+                            <constraint firstItem="XKz-s9-LHE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="XTM-4d-e6i"/>
+                            <constraint firstItem="cKq-Fs-KEI" firstAttribute="height" secondItem="pgw-OX-ohR" secondAttribute="height" id="f7M-do-CSQ"/>
+                            <constraint firstItem="XKz-s9-LHE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="m9f-4O-kIZ"/>
+                            <constraint firstItem="XKz-s9-LHE" firstAttribute="height" secondItem="cKq-Fs-KEI" secondAttribute="height" id="rdo-GT-Tqb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="385"/>
+        </scene>
+    </scenes>
+</document>
